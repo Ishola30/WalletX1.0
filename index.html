@@ -928,5 +928,21 @@ document.querySelectorAll("form[data-type]").forEach(form => {
     showView("confirmation");
   });
 });
+/* SIGN OUT */
+
+document.getElementById("logout").addEventListener("click", () => {
+  walletPage.style.display = "none";
+  loginPage.style.display = "flex";
+  loginForm.reset();
+  loginError.textContent = "";
+});
+
+/* INITIALIZE */
+
+renderActivity();
+</script>
+
+</body>
+</html>
 
   
